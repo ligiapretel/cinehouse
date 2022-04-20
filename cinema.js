@@ -10,3 +10,10 @@ console.log(catalogoString)
 
 var catalogoObjeto = JSON.parse(catalogoString)
 console.log(catalogoObjeto)
+
+function listarFilmes(filmes){
+    for(let i=0;i<filmes.length;i++){
+        console.log(filmes[i].titulo)
+    }
+}
+listarFilmes(catalogoObjeto.data)
